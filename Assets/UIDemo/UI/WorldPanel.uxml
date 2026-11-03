@@ -1,0 +1,8 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements">
+    <Style src="WorldPanel.uss" />
+    <ui:VisualElement name="panel" class="world-panel">
+        <ui:Label name="title" text="Obiekt" class="world-title" />
+        <ui:ProgressBar name="bar" low-value="0" high-value="100" value="50" class="world-bar" />
+        <ui:Label name="desc" text="" class="world-desc" />
+    </ui:VisualElement>
+</ui:UXML>

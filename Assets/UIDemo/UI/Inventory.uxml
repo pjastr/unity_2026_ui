@@ -1,0 +1,18 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements">
+    <Style src="Inventory.uss" />
+    <ui:VisualElement name="screen" class="screen">
+        <ui:VisualElement class="column">
+            <ui:Label name="list-header" text="Ekwipunek" class="header" />
+            <ui:ListView name="items" class="list" />
+            <ui:Label name="selected" text="Wybierz przedmiot z listy." class="details" />
+        </ui:VisualElement>
+        <ui:VisualElement class="column stats">
+            <ui:Label text="Postać (wiązanie danych)" class="header" />
+            <ui:Label name="player-name" class="player-name" />
+            <ui:ProgressBar name="health" low-value="0" high-value="100" class="health" />
+            <ui:Label name="gold" class="gold" />
+            <ui:TextField name="name-field" label="Imię" class="name-field" />
+            <ui:Label text="Pole Imię jest powiązane w obu kierunkach (TwoWay): zmiana w polu zmienia dane, a dane – nagłówek." class="hint" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

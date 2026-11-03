@@ -1,0 +1,18 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements">
+    <Style src="MainMenu.uss" />
+    <ui:VisualElement name="screen" class="screen">
+        <ui:VisualElement name="card" class="card">
+            <ui:Label text="Moja Gra" class="title" />
+            <ui:Label text="UI Toolkit: UXML + USS + C#" class="subtitle" />
+            <ui:Button name="play" text="Graj" class="menu-button" />
+            <ui:Button name="settings" text="Ustawienia" class="menu-button" />
+            <ui:Button name="credits" text="Autorzy" class="menu-button" />
+            <ui:Button name="quit" text="Wyjdź" class="menu-button danger" />
+            <ui:VisualElement class="separator" />
+            <ui:Slider name="volume" label="Głośność" low-value="0" high-value="100" value="80" class="option" />
+            <ui:Toggle name="subtitles" label="Napisy" value="true" class="option" />
+            <ui:DropdownField name="difficulty" label="Trudność" choices="Łatwy,Normalny,Trudny" index="1" class="option" />
+            <ui:Label name="info" text="Najedź na przycisk lub użyj klawiatury / pada." class="info" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

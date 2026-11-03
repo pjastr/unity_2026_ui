@@ -1,0 +1,13 @@
+/* Motyw jasny – nadpisuje tylko zmienne. Dodawany/usuwany w kodzie (root.styleSheets.Add/Remove). */
+.screen {
+    --card: rgba(246, 247, 250, 0.97);
+    --button: rgb(222, 228, 238);
+    --button-text: rgb(28, 34, 46);
+    --accent: rgb(0, 110, 220);
+    --text: rgb(28, 34, 46);
+    --muted: rgb(90, 100, 118);
+}
+
+.menu-button:hover {
+    color: white;
+}

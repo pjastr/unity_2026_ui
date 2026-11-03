@@ -1,0 +1,29 @@
+.world-panel {
+    width: 400px;
+    height: 170px;
+    padding: 14px 18px;
+    border-radius: 16px;
+    background-color: rgba(18, 22, 32, 0.88);
+    border-width: 3px;
+    border-color: rgb(255, 170, 40);
+}
+
+.world-title {
+    font-size: 34px;
+    color: white;
+    -unity-font-style: bold;
+}
+
+.world-bar {
+    height: 34px;
+    margin: 6px 0;
+}
+
+.world-bar .unity-progress-bar__progress {
+    background-color: rgb(255, 170, 40);
+}
+
+.world-desc {
+    font-size: 22px;
+    color: rgb(190, 200, 214);
+}

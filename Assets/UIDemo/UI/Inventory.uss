@@ -1,0 +1,108 @@
+.screen {
+    flex-grow: 1;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.column {
+    width: 440px;
+    height: 600px;
+    margin: 0 16px;
+    padding: 18px;
+    border-radius: 16px;
+    background-color: rgba(22, 27, 38, 0.95);
+}
+
+.stats {
+    width: 380px;
+}
+
+.header {
+    font-size: 26px;
+    color: rgb(255, 170, 40);
+    -unity-font-style: bold;
+    margin-bottom: 10px;
+}
+
+.list {
+    flex-grow: 1;
+    background-color: rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+
+.row {
+    flex-direction: row;
+    align-items: center;
+    padding: 0 12px;
+    height: 44px;
+}
+
+.row-icon {
+    width: 26px;
+    height: 26px;
+    border-radius: 13px;
+    margin-right: 12px;
+}
+
+.row-name {
+    flex-grow: 1;
+    font-size: 20px;
+    color: rgb(238, 241, 246);
+}
+
+.row-count {
+    font-size: 20px;
+    color: rgb(255, 170, 40);
+}
+
+.details {
+    margin-top: 10px;
+    font-size: 18px;
+    color: rgb(170, 180, 196);
+    white-space: normal;
+    min-height: 54px;
+}
+
+.player-name {
+    font-size: 36px;
+    color: white;
+    -unity-font-style: bold;
+    margin-bottom: 8px;
+}
+
+.health {
+    height: 36px;
+    margin: 6px 0 14px 0;
+}
+
+.health .unity-progress-bar__progress {
+    background-color: rgb(80, 200, 100);
+}
+
+.health .unity-progress-bar__title {
+    font-size: 18px;
+    color: white;
+}
+
+.gold {
+    font-size: 26px;
+    color: rgb(255, 210, 80);
+    margin-bottom: 20px;
+}
+
+.name-field {
+    font-size: 20px;
+}
+
+.name-field Label {
+    color: rgb(238, 241, 246);
+    min-width: 80px;
+}
+
+.hint {
+    margin-top: 14px;
+    font-size: 16px;
+    color: rgb(150, 160, 176);
+    white-space: normal;
+}

@@ -1,0 +1,111 @@
+/* Motyw ciemny (domyślny). Zmienne USS – jak zmienne CSS. */
+.screen {
+    --bg: rgba(10, 13, 20, 0.0);
+    --card: rgba(22, 27, 38, 0.95);
+    --button: rgb(52, 63, 84);
+    --button-text: rgb(238, 241, 246);
+    --accent: rgb(255, 170, 40);
+    --text: rgb(238, 241, 246);
+    --muted: rgb(160, 170, 186);
+
+    flex-grow: 1;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--bg);
+}
+
+.card {
+    width: 520px;
+    padding: 28px 36px;
+    border-radius: 18px;
+    background-color: var(--card);
+    border-width: 2px;
+    border-color: rgba(255, 255, 255, 0.08);
+    align-items: stretch;
+    transition-property: width, padding;
+    transition-duration: 0.25s;
+}
+
+.title {
+    font-size: 54px;
+    color: var(--accent);
+    -unity-font-style: bold;
+    -unity-text-align: middle-center;
+}
+
+.subtitle {
+    font-size: 20px;
+    color: var(--muted);
+    -unity-text-align: middle-center;
+    margin-bottom: 16px;
+}
+
+.menu-button {
+    height: 60px;
+    margin: 6px 0;
+    font-size: 26px;
+    color: var(--button-text);
+    background-color: var(--button);
+    border-radius: 12px;
+    border-width: 2px;
+    border-color: rgba(0, 0, 0, 0);
+    transition-property: scale, background-color, border-color;
+    transition-duration: 0.15s;
+    transition-timing-function: ease-out;
+}
+
+.menu-button:hover {
+    scale: 1.05 1.05;
+    background-color: var(--accent);
+    color: rgb(20, 20, 24);
+}
+
+.menu-button:focus {
+    border-color: var(--text);
+    scale: 1.05 1.05;
+}
+
+.menu-button:active {
+    scale: 0.97 0.97;
+}
+
+.danger:hover {
+    background-color: rgb(220, 70, 60);
+    color: white;
+}
+
+.separator {
+    height: 2px;
+    margin: 14px 0;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.option {
+    margin: 6px 0;
+    font-size: 20px;
+    color: var(--text);
+}
+
+.option Label {
+    color: var(--text);
+    min-width: 150px;
+}
+
+.info {
+    margin-top: 12px;
+    font-size: 18px;
+    color: var(--muted);
+    white-space: normal;
+    -unity-text-align: middle-center;
+}
+
+/* Klasa dodawana w kodzie: ToggleInClassList("compact") */
+.compact {
+    width: 380px;
+    padding: 14px 18px;
+}
+
+.compact .menu-button {
+    height: 44px;
+    font-size: 20px;
+}
